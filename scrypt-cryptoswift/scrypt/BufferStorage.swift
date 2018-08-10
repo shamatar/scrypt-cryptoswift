@@ -7,13 +7,11 @@
 //
 import Foundation
 
-
-
 final class BufferStorage<T>{
     
-    public typealias Index = Int
-    public typealias Indices = CountableRange<Int>
-    public typealias Element = T
+    typealias Index = Int
+    typealias Indices = CountableRange<Int>
+    typealias Element = T
     
     struct refCountedPtr {
         var ptr: UnsafeMutablePointer<Element>

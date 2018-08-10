@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D89E9FDB47D1A8B5C96D932 /* libPods-scrypt-cryptoswiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 438FC54D2DCF60C3602E5A00 /* libPods-scrypt-cryptoswiftTests.a */; };
 		41EA300DE57E48DBF5B1F0E1 /* libPods-scrypt-cryptoswift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BBDCDB9F34B7CB02C2E00E /* libPods-scrypt-cryptoswift.a */; };
-		8102F5BE211DEF220032DF60 /* ManagedScrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5BC211DEF220032DF60 /* ManagedScrypt.swift */; };
+		8102F5BE211DEF220032DF60 /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5BC211DEF220032DF60 /* Scrypt.swift */; };
 		8102F5BF211DEF220032DF60 /* BufferStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5BD211DEF220032DF60 /* BufferStorage.swift */; };
 		8102F5C1211DF30E0032DF60 /* Salsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5C0211DF30D0032DF60 /* Salsa.swift */; };
 		81FECFB2211B335A006DA367 /* scrypt_cryptoswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FECFA8211B3359006DA367 /* scrypt_cryptoswift.framework */; };
@@ -32,7 +32,7 @@
 		198C82CD31A0514E3CB5ADC4 /* Pods-scrypt-cryptoswiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrypt-cryptoswiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scrypt-cryptoswiftTests/Pods-scrypt-cryptoswiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1DFB24275239BA96B04AE9BF /* Pods-scrypt-cryptoswift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrypt-cryptoswift.release.xcconfig"; path = "Pods/Target Support Files/Pods-scrypt-cryptoswift/Pods-scrypt-cryptoswift.release.xcconfig"; sourceTree = "<group>"; };
 		438FC54D2DCF60C3602E5A00 /* libPods-scrypt-cryptoswiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scrypt-cryptoswiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8102F5BC211DEF220032DF60 /* ManagedScrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedScrypt.swift; sourceTree = "<group>"; };
+		8102F5BC211DEF220032DF60 /* Scrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
 		8102F5BD211DEF220032DF60 /* BufferStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferStorage.swift; sourceTree = "<group>"; };
 		8102F5C0211DF30D0032DF60 /* Salsa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salsa.swift; sourceTree = "<group>"; };
 		81FECFA8211B3359006DA367 /* scrypt_cryptoswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = scrypt_cryptoswift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +128,7 @@
 		81FECFC2211B33BF006DA367 /* scrypt */ = {
 			isa = PBXGroup;
 			children = (
-				8102F5BC211DEF220032DF60 /* ManagedScrypt.swift */,
+				8102F5BC211DEF220032DF60 /* Scrypt.swift */,
 				8102F5BD211DEF220032DF60 /* BufferStorage.swift */,
 				8102F5C0211DF30D0032DF60 /* Salsa.swift */,
 			);
@@ -287,7 +287,7 @@
 			files = (
 				8102F5C1211DF30E0032DF60 /* Salsa.swift in Sources */,
 				8102F5BF211DEF220032DF60 /* BufferStorage.swift in Sources */,
-				8102F5BE211DEF220032DF60 /* ManagedScrypt.swift in Sources */,
+				8102F5BE211DEF220032DF60 /* Scrypt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

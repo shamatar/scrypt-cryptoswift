@@ -102,9 +102,7 @@ extension Scrypt {
     }
     
     static func salsaXOR(tmp: BufferStorage<UInt32>, source: BufferStorage<UInt32>, destination: BufferStorage<UInt32>) {
-        for i in 0 ..< 16 {
-            tmp[i] = tmp[i] ^ source[i]
-        }
+        blockXOR(destination: tmp, source: source, n: 16)
         // reuse destination as a temporary memory
         Salsa.salsa20(tmp, rounds: 8, tmp: destination)
         blockCopy(destination: destination, source: tmp, n: 16)
