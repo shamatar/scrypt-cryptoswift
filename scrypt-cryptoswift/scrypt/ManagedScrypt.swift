@@ -20,7 +20,7 @@ import CryptoSwift
 //    BlockSizeFactor (r):       Integer  blocksize parameter (8 is commonly used)
 //    ParallelizationFactor (p): Integer  Parallelization parameter. (1..232-1 * hLen/MFlen)
 //    DesiredKeyLen:
-///          DK = PBKDF2(PRF, Password, Salt, c, dkLen)
+
 public struct Scrypt {
     public enum Error: Swift.Error {
         case invalidInput
