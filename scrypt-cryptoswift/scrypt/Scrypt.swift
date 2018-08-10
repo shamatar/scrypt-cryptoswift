@@ -31,6 +31,8 @@ public extension CryptoSwift.PKCS5 {
         public enum Error: Swift.Error {
             case invalidInput
             case derivedKeyTooLong
+            case pValueTooLarge
+            case nValueNotPowerOf2
         }
         
         private let salt: Array<UInt8> // S
@@ -53,6 +55,21 @@ public extension CryptoSwift.PKCS5 {
             precondition(N > 0)
             precondition(r > 0)
             precondition(p > 0)
+            
+            let MFLen = Double(r)*128
+            let hLen = Double(32)
+            
+            if N & (N-1) != 0 {
+                throw Error.nValueNotPowerOf2
+            }
+            
+            if Double(p) > (pow(2, 32) - 1) * hLen / MFLen {
+                throw Error.pValueTooLarge
+            }
+            
+            if Double(dkLen) > (pow(2, 32) - 1) * hLen {
+                throw Error.derivedKeyTooLong
+            }
             
             self.blocksize = 128 * r
             self.N = N
@@ -167,7 +184,7 @@ extension CryptoSwift.PKCS5.Scrypt {
         
         var j = b.startIndex
         for i in 0 ..< 32*r {
-            x[i] = uint32(b[j]) | uint32(b[j+1])<<8 | uint32(b[j+2])<<16 | uint32(b[j+3])<<24 // decode as LE Uint32
+            x[i] = UInt32(b[j]) | UInt32(b[j+1])<<8 | UInt32(b[j+2])<<16 | UInt32(b[j+3])<<24 // decode as LE Uint32
             j += 4
         }
         for i in stride(from: 0, to: N, by: 2) {
