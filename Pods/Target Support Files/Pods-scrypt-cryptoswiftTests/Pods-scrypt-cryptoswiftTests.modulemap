@@ -1,0 +1,6 @@
+module Pods_scrypt_cryptoswiftTests {
+  umbrella header "Pods-scrypt-cryptoswiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
