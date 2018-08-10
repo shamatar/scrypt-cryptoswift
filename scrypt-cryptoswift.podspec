@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "scrypt-cryptoswift"
-s.version          = "1.0"
+s.version          = "1.1"
 s.summary          = "Scrypt implementation in vanilla Swift for iOS ans macOS"
 
 s.description      = <<-DESC
@@ -21,5 +21,5 @@ s.source_files = "scrypt-cryptoswift/**/*.{swift}",
 s.public_header_files = "scrypt-cryptoswift/scrypt_cryptoswift.h"
 s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
-s.dependency 'CryptoSwift', '~> 0.10'
+s.dependency 'CryptoSwift', '~> 0.11'
 end

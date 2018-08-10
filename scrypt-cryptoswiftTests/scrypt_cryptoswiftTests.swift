@@ -101,10 +101,10 @@ class scrypt_cryptoswiftTests: XCTestCase {
 """.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "").replacingOccurrences(of: "\t", with: ""))
         let N = 16
         let r = 1
-        var v = Array<UInt32>(repeating: 0, count: 32*N*r)
-        var xy = Array<UInt32>(repeating: 0, count: 64*r)
+        let v = BufferStorage<UInt32>(repeating: 0, count: 32*N*r)
+        let xy = BufferStorage<UInt32>(repeating: 0, count: 64*r)
         var slice = ArraySlice<UInt8>(input)
-        CryptoSwift.PKCS5.Scrypt.smix(b: &slice, N: N, r: r, v: &v, xy: &xy)
+        Scrypt.smix(b: &slice, N: N, r: r, v: v, xy: xy)
         let expected: [UInt8] = Array<UInt8>.init(hex: """
         79 cc c1 93 62 9d eb ca 04 7f 0b 70 60 4b f6 b6
        2c e3 dd 4a 96 26 e3 55 fa fc 61 98 e6 ea 2b 46
@@ -124,7 +124,7 @@ class scrypt_cryptoswiftTests: XCTestCase {
         do {
             let password = Array("password".data(using: .ascii)!)
             let salt = Array("NaCl".data(using: .ascii)!)
-            let deriver = try CryptoSwift.PKCS5.Scrypt.init(password: password, salt: salt, dkLen: 64, N: 1024, r: 8, p: 16)
+            let deriver = try Scrypt.init(password: password, salt: salt, dkLen: 64, N: 1024, r: 8, p: 16)
             let derived = try deriver.calculate()
             let expected: [UInt8] = Array<UInt8>.init(hex: """
                 fd ba be 1c 9d 34 72 00 78 56 e7 19 0d 01 e9 fe
@@ -144,16 +144,24 @@ class scrypt_cryptoswiftTests: XCTestCase {
     
     func testIngetrify() {
         let data: Array<UInt8> = [0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00]
-        let x = CryptoSwift.PKCS5.Scrypt.integerify(data)
+        let x = Scrypt.integerify(data)
         XCTAssert(x == 1 + (1<<48))
     }
     
     func testScryptPerformance() {
-        let password = Array("password".data(using: .ascii)!)
-        let salt = Array("NaCl".data(using: .ascii)!)
-        let deriver = try! CryptoSwift.PKCS5.Scrypt.init(password: password, salt: salt, dkLen: 64, N: 1024, r: 8, p: 16)
+        let password = "BANKEXFOUNDATION"
+        let salt = Array("SALT".data(using: .ascii)!)
+        let deriver = try! Scrypt(password: Array(password.data(using: .ascii)!), salt: salt, dkLen: 32, N: 4096, r: 6, p: 1)
         measure {
             let _ = try! deriver.calculate()
         }
+    }
+    
+    func testProfilerRun() {
+        //            N: Int = 4096, R: Int = 6, P: Int = 1
+        let password = "BANKEXFOUNDATION"
+        let salt = Array("SALT".data(using: .ascii)!)
+        let deriver = try! Scrypt(password: Array(password.data(using: .ascii)!), salt: salt, dkLen: 32, N: 4096, r: 6, p: 1)
+        let _ = try! deriver.calculate()
     }
 }
