@@ -1,0 +1,1 @@
+../../../scrypt/scrypt-cryptoswift/scrypt_cryptoswift.h

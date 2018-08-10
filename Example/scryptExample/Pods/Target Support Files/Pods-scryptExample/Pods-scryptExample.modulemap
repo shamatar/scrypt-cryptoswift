@@ -1,0 +1,6 @@
+module Pods_scryptExample {
+  umbrella header "Pods-scryptExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
