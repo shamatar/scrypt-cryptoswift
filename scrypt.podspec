@@ -20,5 +20,5 @@ s.osx.deployment_target = "10.11"
 s.source_files = "scrypt/**/*.{swift}",
 s.public_header_files = "scrypt/scrypt.h"
 s.requires_arc = true
-s.dependency 'CryptoSwift', '~> 0.11'
+s.dependency 'CryptoSwift', '~> 0.10'
 end
