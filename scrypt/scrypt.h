@@ -12,8 +12,6 @@
 #import <Cocoa/Cocoa.h>
 #endif
 
-//#import "SalsaCimpt.h"
-
 //! Project version number for scrypt_cryptoswift.
 FOUNDATION_EXPORT double scrypt_cryptoswiftVersionNumber;
 

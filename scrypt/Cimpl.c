@@ -33,7 +33,7 @@
 // Cleanup and putting it all together
 
 //
-//  SalsaCimpl.c
+//  Cimpl.c
 //  scrypt
 //
 //  Created by Alex Vlasov on 04.09.2018.
