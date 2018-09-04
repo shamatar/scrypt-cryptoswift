@@ -1,0 +1,4 @@
+module scryptC [extern_c] {
+    header "SalsaCimpl.h"
+    export *
+}

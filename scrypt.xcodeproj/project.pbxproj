@@ -11,6 +11,7 @@
 		8102F5BE211DEF220032DF60 /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5BC211DEF220032DF60 /* Scrypt.swift */; };
 		8102F5BF211DEF220032DF60 /* BufferStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5BD211DEF220032DF60 /* BufferStorage.swift */; };
 		8102F5C1211DF30E0032DF60 /* Salsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5C0211DF30D0032DF60 /* Salsa.swift */; };
+		81A7B24F213F337B004CD2C7 /* SalsaCimpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 81A7B24E213F337B004CD2C7 /* SalsaCimpl.c */; };
 		81FECFB2211B335A006DA367 /* scrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FECFA8211B3359006DA367 /* scrypt.framework */; };
 		81FECFB7211B335A006DA367 /* scryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FECFB6211B335A006DA367 /* scryptTests.swift */; };
 		81FECFB9211B335A006DA367 /* scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 81FECFAB211B3359006DA367 /* scrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +39,9 @@
 		8102F5BC211DEF220032DF60 /* Scrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
 		8102F5BD211DEF220032DF60 /* BufferStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferStorage.swift; sourceTree = "<group>"; };
 		8102F5C0211DF30D0032DF60 /* Salsa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salsa.swift; sourceTree = "<group>"; };
+		81A7B248213F2846004CD2C7 /* SalsaCimpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalsaCimpl.h; sourceTree = "<group>"; };
+		81A7B24D213F2F1D004CD2C7 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		81A7B24E213F337B004CD2C7 /* SalsaCimpl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SalsaCimpl.c; sourceTree = "<group>"; };
 		81FECFA8211B3359006DA367 /* scrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = scrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FECFAB211B3359006DA367 /* scrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scrypt.h; sourceTree = "<group>"; };
 		81FECFAC211B3359006DA367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,6 +128,9 @@
 				81FECFC2211B33BF006DA367 /* scrypt */,
 				81FECFAB211B3359006DA367 /* scrypt.h */,
 				81FECFAC211B3359006DA367 /* Info.plist */,
+				81A7B24D213F2F1D004CD2C7 /* module.modulemap */,
+				81A7B248213F2846004CD2C7 /* SalsaCimpl.h */,
+				81A7B24E213F337B004CD2C7 /* SalsaCimpl.c */,
 			);
 			path = scrypt;
 			sourceTree = "<group>";
@@ -300,6 +307,7 @@
 				8102F5C1211DF30E0032DF60 /* Salsa.swift in Sources */,
 				8102F5BF211DEF220032DF60 /* BufferStorage.swift in Sources */,
 				8102F5BE211DEF220032DF60 /* Scrypt.swift in Sources */,
+				81A7B24F213F337B004CD2C7 /* SalsaCimpl.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +473,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.shamatar.scrypt-cryptoswift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(inherited) \"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\" $(SRCROOT)/";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
@@ -494,6 +504,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.shamatar.scrypt-cryptoswift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(inherited) \"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\" $(SRCROOT)/";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
