@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "scrypt"
-s.version          = "1.8"
+s.version          = "2.0"
 s.summary          = "Scrypt implementation in vanilla Swift for iOS ans macOS"
 
 s.description      = <<-DESC
@@ -25,8 +25,8 @@ s.public_header_files = "scrypt/scrypt.h"
 s.requires_arc = true
 s.dependency 'CryptoSwift', '~> 0.11'
 s.pod_target_xcconfig = {'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES', 
-                      	'SWIFT_OPTIMIZATION_LEVEL' => '-O',
 			'SWIFT_COMPILATION_MODE' => 'wholemodule',
+			'SWIFT_OPTIMIZATION_LEVEL = -Owholemodule'
 			'SWIFT_DISABLE_SAFETY_CHECKS' => 'YES',
 			'SWIFT_ENFORCE_EXCLUSIVE_ACCESS' => 'compile-time',
 			'GCC_UNROLL_LOOPS' => 'YES',

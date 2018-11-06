@@ -1,5 +1,5 @@
 def import_pods
-  pod 'CryptoSwift', '~> 0.10'
+  pod 'CryptoSwift', '~> 0.12'
 end
 
 target 'scrypt' do
@@ -9,6 +9,11 @@ target 'scrypt' do
   import_pods
 
   target 'scryptTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'scryptTestsPerf' do
     inherit! :search_paths
     # Pods for testing
   end

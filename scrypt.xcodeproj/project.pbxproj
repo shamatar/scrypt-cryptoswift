@@ -9,16 +9,25 @@
 /* Begin PBXBuildFile section */
 		2256AB159DE1985680C46899 /* libPods-scrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7F9AE424AD778DAFF88E2A /* libPods-scrypt.a */; };
 		8102F5BE211DEF220032DF60 /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5BC211DEF220032DF60 /* Scrypt.swift */; };
-		8102F5BF211DEF220032DF60 /* BufferStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5BD211DEF220032DF60 /* BufferStorage.swift */; };
-		8102F5C1211DF30E0032DF60 /* Salsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8102F5C0211DF30D0032DF60 /* Salsa.swift */; };
+		813247A72163812C006BC789 /* PointerArithmeticsImplimentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813247A62163812C006BC789 /* PointerArithmeticsImplimentation.swift */; };
+		813247BF2163AC08006BC789 /* scrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FECFA8211B3359006DA367 /* scrypt.framework */; };
+		813247C52163AC2E006BC789 /* scryptPerfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813247B42163AB6F006BC789 /* scryptPerfTests.swift */; };
 		81A7B24F213F337B004CD2C7 /* Cimpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 81A7B24E213F337B004CD2C7 /* Cimpl.c */; };
 		81FECFB2211B335A006DA367 /* scrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FECFA8211B3359006DA367 /* scrypt.framework */; };
 		81FECFB7211B335A006DA367 /* scryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FECFB6211B335A006DA367 /* scryptTests.swift */; };
 		81FECFB9211B335A006DA367 /* scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 81FECFAB211B3359006DA367 /* scrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B47686568711B474C53D9EF0 /* libPods-scryptTestsPerf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 613166C013A424D75850B99D /* libPods-scryptTestsPerf.a */; };
 		BAC96A728CF69A8FCC6A27A2 /* libPods-scryptTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 649171886E069813A80FCAAB /* libPods-scryptTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		813247C02163AC08006BC789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81FECF9F211B3359006DA367 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81FECFA7211B3359006DA367;
+			remoteInfo = scrypt;
+		};
 		81FECFB3211B335A006DA367 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 81FECF9F211B3359006DA367 /* Project object */;
@@ -34,11 +43,14 @@
 		1DFB24275239BA96B04AE9BF /* Pods-scrypt-cryptoswift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrypt-cryptoswift.release.xcconfig"; path = "Pods/Target Support Files/Pods-scrypt-cryptoswift/Pods-scrypt-cryptoswift.release.xcconfig"; sourceTree = "<group>"; };
 		1F8ED4EA51EBB864A60E3E0A /* Pods-scrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-scrypt/Pods-scrypt.release.xcconfig"; sourceTree = "<group>"; };
 		438FC54D2DCF60C3602E5A00 /* libPods-scrypt-cryptoswiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scrypt-cryptoswiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		613166C013A424D75850B99D /* libPods-scryptTestsPerf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scryptTestsPerf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649171886E069813A80FCAAB /* libPods-scryptTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scryptTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7F9AE424AD778DAFF88E2A /* libPods-scrypt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scrypt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8102F5BC211DEF220032DF60 /* Scrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
-		8102F5BD211DEF220032DF60 /* BufferStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferStorage.swift; sourceTree = "<group>"; };
-		8102F5C0211DF30D0032DF60 /* Salsa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salsa.swift; sourceTree = "<group>"; };
+		813247A62163812C006BC789 /* PointerArithmeticsImplimentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerArithmeticsImplimentation.swift; sourceTree = "<group>"; };
+		813247B42163AB6F006BC789 /* scryptPerfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scryptPerfTests.swift; sourceTree = "<group>"; };
+		813247BA2163AC08006BC789 /* scryptTestsPerf.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scryptTestsPerf.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		813247BE2163AC08006BC789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81A7B248213F2846004CD2C7 /* Cimpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cimpl.h; sourceTree = "<group>"; };
 		81A7B24D213F2F1D004CD2C7 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		81A7B24E213F337B004CD2C7 /* Cimpl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Cimpl.c; sourceTree = "<group>"; };
@@ -49,13 +61,24 @@
 		81FECFB6211B335A006DA367 /* scryptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scryptTests.swift; sourceTree = "<group>"; };
 		81FECFB8211B335A006DA367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9965154360161CF1FBF1769C /* Pods-scrypt-cryptoswift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrypt-cryptoswift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scrypt-cryptoswift/Pods-scrypt-cryptoswift.debug.xcconfig"; sourceTree = "<group>"; };
+		A6C7C18911FF5ED16DF48F15 /* Pods-scryptTestsPerf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scryptTestsPerf.release.xcconfig"; path = "Pods/Target Support Files/Pods-scryptTestsPerf/Pods-scryptTestsPerf.release.xcconfig"; sourceTree = "<group>"; };
 		B1DB33FC12A9A469DBDCDCE7 /* Pods-scryptTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scryptTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-scryptTests/Pods-scryptTests.release.xcconfig"; sourceTree = "<group>"; };
+		C93458444A093A80750A9290 /* Pods-scryptTestsPerf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scryptTestsPerf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scryptTestsPerf/Pods-scryptTestsPerf.debug.xcconfig"; sourceTree = "<group>"; };
 		D836FC707B9C81302BE10E9A /* Pods-scrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scrypt/Pods-scrypt.debug.xcconfig"; sourceTree = "<group>"; };
 		F1D37377D98D842ACD3E96D8 /* Pods-scryptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scryptTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scryptTests/Pods-scryptTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5BBDCDB9F34B7CB02C2E00E /* libPods-scrypt-cryptoswift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scrypt-cryptoswift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		813247B72163AC08006BC789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813247BF2163AC08006BC789 /* scrypt.framework in Frameworks */,
+				B47686568711B474C53D9EF0 /* libPods-scryptTestsPerf.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81FECFA4211B3359006DA367 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,6 +110,8 @@
 				1F8ED4EA51EBB864A60E3E0A /* Pods-scrypt.release.xcconfig */,
 				F1D37377D98D842ACD3E96D8 /* Pods-scryptTests.debug.xcconfig */,
 				B1DB33FC12A9A469DBDCDCE7 /* Pods-scryptTests.release.xcconfig */,
+				C93458444A093A80750A9290 /* Pods-scryptTestsPerf.debug.xcconfig */,
+				A6C7C18911FF5ED16DF48F15 /* Pods-scryptTestsPerf.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -98,8 +123,36 @@
 				438FC54D2DCF60C3602E5A00 /* libPods-scrypt-cryptoswiftTests.a */,
 				7D7F9AE424AD778DAFF88E2A /* libPods-scrypt.a */,
 				649171886E069813A80FCAAB /* libPods-scryptTests.a */,
+				613166C013A424D75850B99D /* libPods-scryptTestsPerf.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		813247BB2163AC08006BC789 /* scryptTestsPerf */ = {
+			isa = PBXGroup;
+			children = (
+				813247BE2163AC08006BC789 /* Info.plist */,
+			);
+			path = scryptTestsPerf;
+			sourceTree = "<group>";
+		};
+		8146BCA72163BB9D00726B4D /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8102F5BC211DEF220032DF60 /* Scrypt.swift */,
+				813247A62163812C006BC789 /* PointerArithmeticsImplimentation.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		8146BCA82163BBA300726B4D /* C */ = {
+			isa = PBXGroup;
+			children = (
+				81A7B248213F2846004CD2C7 /* Cimpl.h */,
+				81A7B24E213F337B004CD2C7 /* Cimpl.c */,
+				81A7B24D213F2F1D004CD2C7 /* module.modulemap */,
+			);
+			path = C;
 			sourceTree = "<group>";
 		};
 		81FECF9E211B3359006DA367 = {
@@ -107,6 +160,7 @@
 			children = (
 				81FECFAA211B3359006DA367 /* scrypt */,
 				81FECFB5211B335A006DA367 /* scryptTests */,
+				813247BB2163AC08006BC789 /* scryptTestsPerf */,
 				81FECFA9211B3359006DA367 /* Products */,
 				4020BF354D69967955483C92 /* Pods */,
 				63005EACCB84A6DB3E718876 /* Frameworks */,
@@ -118,6 +172,7 @@
 			children = (
 				81FECFA8211B3359006DA367 /* scrypt.framework */,
 				81FECFB1211B335A006DA367 /* scryptTests.xctest */,
+				813247BA2163AC08006BC789 /* scryptTestsPerf.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,12 +180,10 @@
 		81FECFAA211B3359006DA367 /* scrypt */ = {
 			isa = PBXGroup;
 			children = (
-				81FECFC2211B33BF006DA367 /* scrypt */,
+				8146BCA82163BBA300726B4D /* C */,
+				8146BCA72163BB9D00726B4D /* Swift */,
 				81FECFAB211B3359006DA367 /* scrypt.h */,
 				81FECFAC211B3359006DA367 /* Info.plist */,
-				81A7B24D213F2F1D004CD2C7 /* module.modulemap */,
-				81A7B248213F2846004CD2C7 /* Cimpl.h */,
-				81A7B24E213F337B004CD2C7 /* Cimpl.c */,
 			);
 			path = scrypt;
 			sourceTree = "<group>";
@@ -138,20 +191,11 @@
 		81FECFB5211B335A006DA367 /* scryptTests */ = {
 			isa = PBXGroup;
 			children = (
+				813247B42163AB6F006BC789 /* scryptPerfTests.swift */,
 				81FECFB6211B335A006DA367 /* scryptTests.swift */,
 				81FECFB8211B335A006DA367 /* Info.plist */,
 			);
 			path = scryptTests;
-			sourceTree = "<group>";
-		};
-		81FECFC2211B33BF006DA367 /* scrypt */ = {
-			isa = PBXGroup;
-			children = (
-				8102F5BC211DEF220032DF60 /* Scrypt.swift */,
-				8102F5BD211DEF220032DF60 /* BufferStorage.swift */,
-				8102F5C0211DF30D0032DF60 /* Salsa.swift */,
-			);
-			path = scrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +212,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		813247B92163AC08006BC789 /* scryptTestsPerf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813247C22163AC08006BC789 /* Build configuration list for PBXNativeTarget "scryptTestsPerf" */;
+			buildPhases = (
+				898414D5C90B4012E47C947C /* [CP] Check Pods Manifest.lock */,
+				813247B62163AC08006BC789 /* Sources */,
+				813247B72163AC08006BC789 /* Frameworks */,
+				813247B82163AC08006BC789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813247C12163AC08006BC789 /* PBXTargetDependency */,
+			);
+			name = scryptTestsPerf;
+			productName = scryptTestsPerf;
+			productReference = 813247BA2163AC08006BC789 /* scryptTestsPerf.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		81FECFA7211B3359006DA367 /* scrypt */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81FECFBC211B335A006DA367 /* Build configuration list for PBXNativeTarget "scrypt" */;
@@ -212,10 +275,13 @@
 		81FECF9F211B3359006DA367 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Alexander Vlasov";
 				TargetAttributes = {
+					813247B92163AC08006BC789 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					81FECFA7211B3359006DA367 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
@@ -239,11 +305,19 @@
 			targets = (
 				81FECFA7211B3359006DA367 /* scrypt */,
 				81FECFB0211B335A006DA367 /* scryptTests */,
+				813247B92163AC08006BC789 /* scryptTestsPerf */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		813247B82163AC08006BC789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81FECFA6211B3359006DA367 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +335,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		898414D5C90B4012E47C947C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scryptTestsPerf-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A16D5C4ECB13ACEAD86BD358 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,12 +396,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		813247B62163AC08006BC789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813247C52163AC2E006BC789 /* scryptPerfTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81FECFA3211B3359006DA367 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8102F5C1211DF30E0032DF60 /* Salsa.swift in Sources */,
-				8102F5BF211DEF220032DF60 /* BufferStorage.swift in Sources */,
+				813247A72163812C006BC789 /* PointerArithmeticsImplimentation.swift in Sources */,
 				8102F5BE211DEF220032DF60 /* Scrypt.swift in Sources */,
 				81A7B24F213F337B004CD2C7 /* Cimpl.c in Sources */,
 			);
@@ -322,6 +425,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		813247C12163AC08006BC789 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81FECFA7211B3359006DA367 /* scrypt */;
+			targetProxy = 813247C02163AC08006BC789 /* PBXContainerItemProxy */;
+		};
 		81FECFB4211B335A006DA367 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 81FECFA7211B3359006DA367 /* scrypt */;
@@ -330,6 +438,49 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		813247C32163AC08006BC789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93458444A093A80750A9290 /* Pods-scryptTestsPerf.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 62V9CKQN89;
+				INFOPLIST_FILE = scryptTestsPerf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = shamatar.scryptTestsPerf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		813247C42163AC08006BC789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C7C18911FF5ED16DF48F15 /* Pods-scryptTestsPerf.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 62V9CKQN89;
+				INFOPLIST_FILE = scryptTestsPerf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = shamatar.scryptTestsPerf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		81FECFBA211B335A006DA367 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -473,10 +624,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.shamatar.scrypt-cryptoswift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(inherited) \"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\" $(SRCROOT)/";
+				SWIFT_INCLUDE_PATHS = "$(inherited) \"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\"";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -504,9 +655,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.shamatar.scrypt-cryptoswift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(inherited) \"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\" $(SRCROOT)/";
+				SWIFT_INCLUDE_PATHS = "$(inherited) \"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\"";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -526,7 +677,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.shamatar.scrypt-cryptoswiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -546,13 +697,22 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.shamatar.scrypt-cryptoswiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		813247C22163AC08006BC789 /* Build configuration list for PBXNativeTarget "scryptTestsPerf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813247C32163AC08006BC789 /* Debug */,
+				813247C42163AC08006BC789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		81FECFA2211B3359006DA367 /* Build configuration list for PBXProject "scrypt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
