@@ -2,4 +2,4 @@
 /.build
 /Packages
 /*.xcodeproj
-*.wcworkspace/xcuserdata/
+*.wcworkspace/xcuserdata/*
