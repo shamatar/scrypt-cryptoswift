@@ -26,10 +26,11 @@ s.requires_arc = true
 s.dependency 'CryptoSwift', '~> 0.13'
 s.pod_target_xcconfig = {'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES', 
 			'SWIFT_COMPILATION_MODE' => 'wholemodule',
-			'SWIFT_OPTIMIZATION_LEVEL = -Owholemodule'
+			'SWIFT_OPTIMIZATION_LEVEL' => '-Owholemodule',
 			'SWIFT_DISABLE_SAFETY_CHECKS' => 'YES',
 			'SWIFT_ENFORCE_EXCLUSIVE_ACCESS' => 'compile-time',
 			'GCC_UNROLL_LOOPS' => 'YES',
 			'DEFINES_MODULE' => 'YES'} 
+
 #s.xcconfig = {'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/scrypt' }
 end
