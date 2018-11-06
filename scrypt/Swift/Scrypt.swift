@@ -9,6 +9,7 @@
 //  https://www.ietf.org/rfc/rfc7914.txt
 //
 import CryptoSwift
+import Foundation
 
 //import scryptC
 
